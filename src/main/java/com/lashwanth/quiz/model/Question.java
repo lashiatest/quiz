@@ -1,4 +1,4 @@
-package com.lashwanth.quiz;
+package com.lashwanth.quiz.model;
 
 import jakarta.persistence.*;
 import lombok.Data;

@@ -1,8 +1,9 @@
 package com.lashwanth.quiz.controller;
 
-import com.lashwanth.quiz.Question;
+import com.lashwanth.quiz.model.Question;
 import com.lashwanth.quiz.service.QuestionService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -15,27 +16,27 @@ public class QuestionController {
     QuestionService questionService;
 
     @GetMapping("questions")
-    public List<Question> getQuestions() {
+    public ResponseEntity<List<Question>> getQuestions() {
         return questionService.getQuestions();
     }
 
-    @GetMapping("id/{id}")
-    public Optional<Question> getQuestionsById(@PathVariable Integer id) {
+    @GetMapping("get/{id}")
+    public ResponseEntity<Optional<Question>> getQuestionsById(@PathVariable Integer id) {
         return questionService.getQuestionsById(id);
     }
 
     @PostMapping("add")
-    public String addQuestion(@RequestBody Question question) {
+    public ResponseEntity<String> addQuestion(@RequestBody Question question) {
         return questionService.addQuestion(question);
     }
 
     @DeleteMapping("delete")
-    public String deleteQuestion(@RequestBody Integer id) {
+    public ResponseEntity<String> deleteQuestion(@RequestBody Integer id) {
         return questionService.deleteQuestion(id);
     }
 
     @PutMapping("update")
-    public String updateQuestion(@RequestBody Question question) {
+    public ResponseEntity<String> updateQuestion(@RequestBody Question question) {
         return questionService.updateQuestion(question);
     }
 }
