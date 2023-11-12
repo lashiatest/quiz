@@ -6,7 +6,7 @@
 Add the root after the url to make a request.\
 Then input the command you want to execute.\
 URL accessible means you can make the request through the url.\
-Requires API development app such as Postman or Hoppscotch.\
+Requires API development app such as Postman or Hoppscotch.
 
 QuestionController: /question - root\
 /questions - Get all questions (URL Accessible)\
