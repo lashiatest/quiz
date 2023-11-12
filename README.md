@@ -9,6 +9,7 @@ URL accessible means you can make the request through the url.
 Requires API development app such as Postman or Hoppscotch.
 
 QuestionController: /question - root
+
 /questions - Get all questions (URL Accessible)
 
 /get/{id} - Get a specific question (Replace "{id}" with question id)(URL Accessible).
