@@ -2,7 +2,7 @@
 
 ## A springboot application running on Render with postgreSQL as the database. This is for a project I am working on. The website will bring you to the spring web application. However, this website will be down for most of the time.
 
-### Commands\
+### Commands
 Add the root after the url to make a request.\
 Then input the command you want to execute.\
 URL accessible means you can make the request through the url.\
